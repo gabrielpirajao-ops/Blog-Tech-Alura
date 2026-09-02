@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechZone | Blog de Tecnologia</title>
+
+    <meta
+        name="description"
+        content="Blog de tecnologia sobre computadores, programação, inteligência artificial, hardware e desenvolvimento de sistemas."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <div class="container header-content">
+
+            <a href="#" class="logo">
+                <span>&lt;/&gt;</span> TechZone
+            </a>
+
+            <nav class="nav" aria-label="Navegação principal">
+                <a href="#inicio">Início</a>
+                <a href="#posts">Posts</a>
+                <a href="#categorias">Categorias</a>
+                <a href="#sobre">Sobre</a>
+            </nav>
+
+            <button class="theme-button" id="themeButton" aria-label="Alternar tema">
+                🌙
+            </button>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+        <section class="hero" id="inicio">
+            <div class="container hero-content">
+
+                <div class="hero-text">
+                    <span class="badge">🚀 Tecnologia & Desenvolvimento</span>
+
+                    <h1>
+                        O mundo da tecnologia
+                        <span>em um só lugar.</span>
+                    </h1>
+
+                    <p>
+                        Notícias, programação, hardware, inteligência artificial
+                        e tudo que um apaixonado por tecnologia precisa conhecer.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#posts" class="button primary">
+                            Explorar posts
+                        </a>
+
+                        <a href="#sobre" class="button secondary">
+                            Sobre o blog
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-card">
+                    <div class="code-window">
+
+                        <div class="window-header">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code>
+const estudante = {
+    nome: "Desenvolvedor",
+    idade: 15,
+    paixao: "PCs",
+    estudando: [
+        "HTML",
+        "CSS",
+        "JavaScript"
+    ]
+};
+
+console.log("Olá, mundo! 🚀");
+                        </code></pre>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ================= BUSCA ================= -->
+        <section class="search-section">
+            <div class="container">
+
+                <div class="search-box">
+                    <input
+                        type="search"
+                        id="searchInput"
+                        placeholder="🔎 Pesquisar posts..."
+                        aria-label="Pesquisar posts"
+                    >
+
+                    <button id="searchButton">
+                        Pesquisar
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ================= POSTS ================= -->
+        <section class="posts-section" id="posts">
+            <div class="container">
+
+                <div class="section-title">
+                    <div>
+                        <span class="section-label">CONTEÚDO</span>
+                        <h2>Posts recentes</h2>
+                    </div>
+
+                    <a href="#" class="see-all">
+                        Ver todos →
+                    </a>
+                </div>
+
+
+                <div class="posts-grid" id="postsGrid">
+
+                    <!-- POST 1 -->
+                    <article
+                        class="post-card"
+                        data-category="hardware"
+                        data-title="Como montar um PC gamer"
+                    >
+
+                        <div class="post-image hardware-image">
+                            🖥️
+                        </div>
+
+                        <div class="post-content">
+
+                            <span class="post-category">
+                                Hardware
+                            </span>
+
+                            <h3>
+                                Como montar um PC gamer equilibrado em 2026
+                            </h3>
+
+                            <p>
+                                Processador, placa de vídeo, memória RAM...
+                                descubra como escolher as peças certas para
+                                montar um computador equilibrado.
+                            </p>
+
+                            <div class="post-author">
+
+                                <div class="avatar">
+                                    JP
+                                </div>
+
+                                <div>
+                                    <strong>João Pedro</strong>
+                                    <small>02 set. 2026 · 5 min</small>
+                                </div>
+
+                            </div>
+
+                            <div class="post-actions">
+
+                                <button
+                                    class="like-button"
+                                    data-likes="128"
+                                    aria-label="Curtir publicação"
+                                >
+                                    ❤️ <span>128</span>
+                                </button>
+
+                                <button class="comment-button">
+                                    💬 <span>24</span>
+                                </button>
+
+                                <button
+                                    class="share-button"
+                                    aria-label="Compartilhar publicação"
+                                >
+                                    🔗
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </article>
+
+
+                    <!-- POST 2 -->
+                    <article
+                        class="post-card"
+                        data-category="programacao"
+                        data-title="JavaScript para iniciantes"
+                    >
+
+                        <div class="post-image javascript-image">
+                            JS
+                        </div>
+
+                        <div class="post-content">
+
+                            <span class="post-category">
+                                Programação
+                            </span>
+
+                            <h3>
+                                7 conceitos de JavaScript que todo iniciante deveria aprender
+                            </h3>
+
+                            <p>
+                                Variáveis, funções, arrays, objetos e muito mais.
+                                Veja conceitos fundamentais para começar no JavaScript.
+                            </p>
+
+                            <div class="post-author">
+
+                                <div class="avatar purple">
+                                    MA
+                                </div>
+
+                                <div>
+                                    <strong>Marina Alves</strong>
+                                    <small>01 set. 2026 · 7 min</small>
+                                </div>
+
+                            </div>
+
+                            <div class="post-actions">
+
+                                <button
+                                    class="like-button"
+                                    data-likes="342"
+                                    aria-label="Curtir publicação"
+                                >
+                                    ❤️ <span>342</span>
+                                </button>
+
+                                <button class="comment-button">
+                                    💬 <span>51</span>
+                                </button>
+
+                                <button
+                                    class="share-button"
+                                    aria-label="Compartilhar publicação"
+                                >
+                                    🔗
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </article>
+
+
+                    <!-- POST 3 -->
+                    <article
+                        class="post-card"
+                        data-category="ia"
+                        data-title="Inteligência artificial"
+                    >
+
+                        <div class="post-image ai-image">
+                            🤖
+                        </div>
+
+                        <div class="post-content">
+
+                            <span class="post-category">
+                                Inteligência Artificial
+                            </span>
+
+                            <h3>
+                                Como a inteligência artificial está mudando a programação
+                            </h3>
+
+                            <p>
+                                Ferramentas de IA estão transformando a maneira
+                                como desenvolvedores escrevem e aprendem código.
+                            </p>
+
+                            <div class="post-author">
+
+                                <div class="avatar green">
+                                    RC
+                                </div>
+
+                                <div>
+                                    <strong>Rafael Costa</strong>
+                                    <small>30 ago. 2026 · 6 min</small>
+                                </div>
+
+                            </div>
+
+                            <div class="post-actions">
+
+                                <button
+                                    class="like-button"
+                                    data-likes="587"
+                                    aria-label="Curtir publicação"
+                                >
+                                    ❤️ <span>587</span>
+                                </button>
+
+                                <button class="comment-button">
+                                    💬 <span>89</span>
+                                </button>
+
+                                <button
+                                    class="share-button"
+                                    aria-label="Compartilhar publicação"
+                                >
+                                    🔗
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </article>
+
+
+                    <!-- POST 4 -->
+                    <article
+                        class="post-card"
+                        data-category="seguranca"
+                        data-title="Segurança digital"
+                    >
+
+                        <div class="post-image security-image">
+                            🔐
+                        </div>
+
+                        <div class="post-content">
+
+                            <span class="post-category">
+                                Segurança
+                            </span>
+
+                            <h3>
+                                5 hábitos para deixar seu computador mais seguro
+                            </h3>
+
+                            <p>
+                                Pequenas atitudes podem ajudar a proteger seus
+                                arquivos, contas e informações pessoais.
+                            </p>
+
+                            <div class="post-author">
+
+                                <div class="avatar orange">
+                                    LS
+                                </div>
+
+                                <div>
+                                    <strong>Lucas Silva</strong>
+                                    <small>28 ago. 2026 · 4 min</small>
+                                </div>
+
+                            </div>
+
+                            <div class="post-actions">
+
+                                <button
+                                    class="like-button"
+                                    data-likes="215"
+                                    aria-label="Curtir publicação"
+                                >
+                                    ❤️ <span>215</span>
+                                </button>
+
+                                <button class="comment-button">
+                                    💬 <span>32</span>
+                                </button>
+
+                                <button
+                                    class="share-button"
+                                    aria-label="Compartilhar publicação"
+                                >
+                                    🔗
+                                </button>
+
+                            </div>
+
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="load-more-container">
+                    <button class="load-more" id="loadMore">
+                        Carregar mais posts
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ================= CATEGORIAS ================= -->
+        <section class="categories-section" id="categorias">
+            <div class="container">
+
+                <div class="section-title centered">
+                    <div>
+                        <span class="section-label">EXPLORE</span>
+                        <h2>Categorias</h2>
+                    </div>
+                </div>
+
+                <div class="categories-grid">
+
+                    <a href="#" class="category-card">
+                        <span>💻</span>
+                        <strong>Programação</strong>
+                        <small>42 posts</small>
+                    </a>
+
+                    <a href="#" class="category-card">
+                        <span>🖥️</span>
+                        <strong>Hardware</strong>
+                        <small>36 posts</small>
+                    </a>
+
+                    <a href="#" class="category-card">
+                        <span>🤖</span>
+                        <strong>Inteligência Artificial</strong>
+                        <small>28 posts</small>
+                    </a>
+
+                    <a href="#" class="category-card">
+                        <span>🔐</span>
+                        <strong>Segurança</strong>
+                        <small>19 posts</small>
+                    </a>
+
+                    <a href="#" class="category-card">
+                        <span>🎮</span>
+                        <strong>Games</strong>
+                        <small>31 posts</small>
+                    </a>
+
+                    <a href="#" class="category-card">
+                        <span>📱</span>
+                        <strong>Tecnologia</strong>
+                        <small>54 posts</small>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ================= NEWSLETTER ================= -->
+        <section class="newsletter">
+            <div class="container newsletter-content">
+
+                <div>
+                    <span class="section-label">NEWSLETTER</span>
+
+                    <h2>
+                        Receba novidades de tecnologia.
+                    </h2>
+
+                    <p>
+                        Novos artigos, dicas e notícias diretamente no seu e-mail.
+                    </p>
+                </div>
+
+                <form id="newsletterForm">
+
+                    <input
+                        type="email"
+                        id="emailInput"
+                        placeholder="Seu melhor e-mail"
+                        required
+                    >
+
+                    <button type="submit">
+                        Inscrever-se
+                    </button>
+
+                </form>
+
+            </div>
+        </section>
+
+
+        <!-- ================= SOBRE ================= -->
+        <section class="about-section" id="sobre">
+            <div class="container about-content">
+
+                <div class="about-icon">
+                    &lt;/&gt;
+                </div>
+
+                <div>
+                    <span class="section-label">SOBRE O BLOG</span>
+
+                    <h2>
+                        Feito por quem ama tecnologia.
+                    </h2>
+
+                    <p>
+                        O TechZone é um projeto criado por um estudante de
+                        Desenvolvimento de Sistemas apaixonado por computadores,
+                        programação e pelo universo da tecnologia.
+                    </p>
+
+                    <p>
+                        A ideia é criar um espaço para aprender, compartilhar
+                        conhecimento e acompanhar as novidades do mundo tech.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container footer-content">
+
+            <div>
+                <a href="#" class="logo">
+                    <span>&lt;/&gt;</span> TechZone
+                </a>
+
+                <p>
+                    Tecnologia, programação e PCs.
+                </p>
+            </div>
+
+            <div class="footer-links">
+
+                <a href="#inicio">Início</a>
+                <a href="#posts">Posts</a>
+                <a href="#categorias">Categorias</a>
+                <a href="#sobre">Sobre</a>
+
+            </div>
+
+            <div class="social-links">
+
+                <a href="#" aria-label="GitHub">
+                    GitHub
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    Instagram
+                </a>
+
+                <a href="#" aria-label="YouTube">
+                    YouTube
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                © 2026 TechZone. Projeto educacional.
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
